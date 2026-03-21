@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+    color: white;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0;
+    align-items: center;
+}
+
+
+.container .heading{
+        font-size: 40px;
+        color: rgb(205, 205, 205);
+
+
+}
+
+.container .boxes{
+    border-radius: 10px;
+    padding: 40px;
+    align-items: center;
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-template-rows: auto auto auto; 
+    gap: 20px;   
+}
+
+.box {
+    width: 150px;
+    height: 120px;
+    border-radius: 10px;
+    background: #2c2c3e;
+    border-left: none;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    transition: all 0.8s;
+    color: white;
+
+} .box:hover {
+    background: #44446a
+    
+}
+
+.square3 , .square6 ,.square9{
+    border-right: none;
+}
+.square7 , .square8 ,.square9{
+    border-bottom: none;
+}
+
+.container .turn-box{
+    width: 80%;
+    padding: 5px;
+    border-radius: 12px;
+    font-size: 28px;
+}
+
+.container button {
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}.container button:hover{
+    opacity: 0.7;
+}
+
+.X {
+  color: #22d3ee;
+  text-shadow: 0 0 10px #22d3ee, 0 0 25px #22d3ee;
+}
+
+.O {
+  color: #facc15;
+  text-shadow: 0 0 10px #facc15, 0 0 20px #facc15;
+}
